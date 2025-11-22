@@ -29,7 +29,7 @@ export default function Chatbot(){
   const userInput = input.trim()
   setInput("")
 
-  fetch("http://localhost:3000/chat", {
+  fetch("https://bck-tutor.onrender.com/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: userInput })
